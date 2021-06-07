@@ -33,22 +33,25 @@ var quizStartScreen = function() {
         function timerStart() {
             var timer = 60;
             var time = setInterval(function () {
-                if (timer > 1) {
+                if (timer > 0) {
                     timerEl.textContent = timer;
                     timer--;
-                } else if (timer === 1) {
-                    timerEl.textContent = timer;
-                    timer--;
-                } else {
+                } else if (timer === 0) {
                     timerEl.textContent = timer;
                     clearInterval(time)
                     window.alert("You have failed!")
+                    timerEl.textContent = ""
                     quizStartScreen()
                 }
             }, 1000);
-        };  
+        };
+        
         timerStart()
+
+        var question1 = document.createElement("div")
+        
     };
+
     startButton.addEventListener("click", startQuiz)
 };
 quizStartScreen();
