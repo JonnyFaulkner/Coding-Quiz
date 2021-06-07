@@ -8,7 +8,7 @@ A application that quizes the user on basic coding knowledge.
 * JavaScript
 
 ## Website
-
+https://jonnyfaulkner.github.io/Coding-Quiz/
 
 ## Screenshots
 
